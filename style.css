@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+
+nav{
+    background-color: #6F6AF7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 48px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.arrow__dropdown{
+    position: relative;
+    bottom: 2px;
+}
+
+.nav__logo{
+    width: 88px;
+}
+.hamburger__logo{
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+
+a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 32px;
+    font-size: 24px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.nav__input--search{
+    position: relative;
+}
+input[type="search"]{
+    width: 100%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 12px;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
+.search__img{
+    width: 16px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+}
+
+/* STICKY ELEMENT */
+
+.social__links{
+    float: right;
+    margin-top: 240px;
+    position: sticky;
+    top: 160px;
+}
+.social__logo{
+    display: block;
+    margin-bottom: 4px;
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 56px;
+    padding: 8px;
+}
+
+/* HEADER */
+
+.container{
+    display: flex;
+    position: relative;
+    top: 132px; 
+    justify-content: center;
+    margin: 24px 88px
+    
+}
+.header__description--wrapper{
+    background-color:#E5D8FF;
+    border-radius: 8px;
+    width: 60%;
+    height: 400px;
+
+
+
+}
+
+.header__description{
+    padding: 8px;
+    margin: 8px;
+    width: 95%;
+    line-height: 1.5;
+
+}
+
+.header__img--wrapper{
+    width: 40%;
+    margin-right: 72px;
+    height: 400px;
+}
+.header__img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* BOXES */
+
+.container__01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 160px;
+    margin: 48px 88px;
+
+}
+
+.box{
+    margin-left: 88px;
+    width: 224px;
+    border-radius: 8px;
+    padding: 16px ;
+    
+}
+.first__box{
+    background-color: #929DFF;
+    margin-left: 0;
+}
+.second__box{
+    background-color: #734CF2;
+}
+.third__box{
+    background-color: #D288FF;
+}
+.fourth__box{
+    background-color: #000000;
+} 
+.box__para, .box__para--first{
+    color: #fff;
+}
+.box__para--first{
+    margin-bottom: 8px;
+}
+
+/* INFO */
+
+.container__info{
+    background-color: #483EFF;
+    position: relative;
+    top: 176px;
+    display: flex;
+    /* justify-content: space-between; */
+    margin: 0 88px;
+    border-radius: 8px;
+
+}
+.button__wrapper{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 16px 16px 0 16px;
+}
+.btn{
+    padding:  16px;
+    margin-bottom: 16px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+
+}
+.btn__selected{
+    background-color:#BCE0F6;
+    color: #000;
+    border: none;
+    font-weight: bold;
+}
+.info__wrapper{
+    width: 80%;
+    margin: 16px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 416px;
+    position: relative;
+}
+
+.next__btn{
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+
+.arrow__logo{
+    width: 24px;
+}
+
+.info__text--wrapper{
+    margin: 24px;
+}
+h4{
+    margin-bottom: 32px;
+    font-size: 24px;
+}
+.bold__text{
+    font-weight: bold;
+}
+.info__para{
+    padding-left: 8px;
+    margin-bottom: 24px;
+}
+.colon{
+    margin: 0 12px;
+}
+
+/* CALL US ICON */
+.fixed__logo--img{
+    position: fixed;
+    bottom: 8px;
+    right: 16px;
+    width: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    
+}
+
+
+/* RESPONSIVNESS */
+@media(max-width:968px) {
+    a{
+        margin-left: 12px;
+        font-size:20px;
+    }
+    input[type="search"]{
+        width: 100%;
+        max-width: 180px;
+    }
+    .hamburger__logo{
+        margin-left: 12px;
+        width: 36px;
+    }
+
+    .box{
+        margin:0 16px 16px 0;
+    }
+}
+@media(max-width:768px) {
+    a{
+        font-size: 16px;
+    }
+    input[type="search"]{
+        padding: 8px 8px;
+    }
+    .hamburger__logo{
+        width: 32px;
+    }
+    .header__img--wrapper {
+        width: 60%;
+        margin-right: 56px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+    .header__img--wrapper{
+        width: 100%;
+        margin-bottom: 72px;
+    }
+    .header__description--wrapper{
+        width: 100%;
+    }
+    .container__01{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 100%;
+    }
+
+
+}
+@media(max-width:702px) {
+    a{
+        display: none;
+    }
+    .hamburger__logo{
+        margin-right: 24px;
+    }
+    .button__wrapper{
+        display: none;
+    }
+    .info__wrapper{
+        margin: 16px auto;
+    }
+}
+@media(max-width:526px){
+    .container{
+        margin: 24px 0;
+    }
+    .container__info{
+        margin: 0;
+    }
+    input[type="search"]{
+        display: none;
+    }
+    .search__img{
+        display: none;
+    }
+    .hamburger__logo{
+        margin: 0;
+    }
+    .info__title{
+        text-align: center;
+    }
+
+    /* .next__btn{
+        bottom: 0;
+        padding: 4px 12px;
+    }
+    .arrow__logo{
+        display: none;
+    } */
+    .social__links{
+        display: none;
+    }
+
+}
